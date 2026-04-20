@@ -40,6 +40,7 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Land
 
         holder.landscapeCaption.setText(landScape.getLandscapeName());
 
+
         String packageName = holder.itemView.getContext().getPackageName();
 
         String nameFile = landScape.getLandscapeImage();
@@ -55,21 +56,23 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Land
     final class LandScapeViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView landscapeCaption;
         ImageView landscapeImage;
+        TextView landscapeQueQuan;
 
         public LandScapeViewHolder(@NonNull View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
             landscapeImage = itemView.findViewById(R.id.ivLandScape);
             landscapeCaption = itemView.findViewById(R.id.tvTen);
+            landscapeCaption = itemView.findViewById(R.id.tvquequan);
         }
 
         @Override
         public void onClick(View v) {
-            //Lấy vị trí item được click thông qua phương thức getAdapterPosition()
+
             int clickedPosition = getAdapterPosition();
-            //Lấy dữ liệu tương ứng từ danh sách (theo vị trí)
+
             LandScape landScape = datas.get(clickedPosition);
-            //Hiện thông báo hoặc các sự kiện khác
+
             Toast.makeText(v.getContext(), "Bạn đã lựa chọn: " + landScape.getLandscapeName(), Toast.LENGTH_SHORT).show();
         }
     }
