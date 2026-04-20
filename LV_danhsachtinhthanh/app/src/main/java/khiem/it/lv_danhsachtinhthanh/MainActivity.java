@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         dsTenTinhThanhVN.add("Quy Nhơn");
 
         //B2: Tạo adapter
-        ArrayAdapter<String> adapterTinhThanh = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dsTenTinhThanhVN);
+        ArrayAdapter<String> adapterTinhThanh = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, dsTenTinhThanhVN);
 
         //B3: Gắn vào điều khển hiển thị ListView
         //3.1: Tìm điều khiêển listview đó
