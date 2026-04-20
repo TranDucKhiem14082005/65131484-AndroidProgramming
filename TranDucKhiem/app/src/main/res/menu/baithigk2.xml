@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chunang1"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Chuc nang 1" />
+    <item
+        android:id="@+id/nav_chunang2"
+        android:icon="@android:drawable/btn_star"
+        android:title="Chuc nang 2" />
+    <item
+        android:id="@+id/nav_chunang3"
+        android:icon="?attr/actionModeCopyDrawable"
+        android:title="Chuc nang 3" />
+    <item
+        android:id="@+id/nav_chunang4"
+        android:icon="@android:drawable/btn_star"
+        android:title="Chuc nang 4" />
+
+</menu>
