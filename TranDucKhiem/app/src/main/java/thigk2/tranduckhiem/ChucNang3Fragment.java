@@ -47,10 +47,11 @@ public class ChucNang3Fragment extends Fragment {
         recyclerViewLandScape = viewCN3.findViewById(R.id.recycCN3);
 
         list = new ArrayList<LandScape>();
-        list.add(new LandScape("Thap Paris", "thap1"));
-        list.add(new LandScape("Thap Cao", "thap2"));
-        list.add(new LandScape("Thap DuBai", "thap3"));
-        list.add(new LandScape("Thap Nghien", "thap4"));
+        list.add(new LandScape("Hồ Chí Minh", "thap1","Quê ở làng Sen (Kim Liên), xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An."));
+        list.add(new LandScape("Nguyễn Trãi", "thap2","Quê gốc ở làng Chi Ngại, huyện Phượng Sơn, lộ Lạng Giang (nay thuộc Chí Linh, Hải Dương), sinh ra tại Thăng Long."));
+        list.add(new LandScape("Nguyễn Du", "thap3","Quê ở làng Tiên Điền, huyện Nghi Xuân, tỉnh Hà Tĩnh."));
+        list.add(new LandScape("Chu Văn An", "thap4","Quê ở thôn Quang Liệt, xã Quang Liệt, huyện Thanh Đàm (nay là xã Thanh Liệt, huyện Thanh Trì, Hà Nội)."));
+        list.add(new LandScape("Nguyễn Đình Chiểu", "thap4",": Quê gốc ở làng Phong Điền, huyện Phong Điền, tỉnh Thừa Thiên Huế (sinh ra tại Gia Định - nay là TP. Hồ Chí Minh)"));
 
         //5. tao layout manager de cai dat bo cuc cho recy
         RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(viewCN3.getContext());
