@@ -3,45 +3,32 @@ package thigk2.tranduckhiem;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ChucNang3Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class ChucNang3Fragment extends Fragment {
+    LandScapeAdapter adapter;
+    ArrayList<LandScape> list;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    RecyclerView recyclerViewLandScape;
 
     public ChucNang3Fragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ChucNang3Fragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static ChucNang3Fragment newInstance(String param1, String param2) {
         ChucNang3Fragment fragment = new ChucNang3Fragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -49,16 +36,33 @@ public class ChucNang3Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chuc_nang3, container, false);
+        View viewCN3 = inflater.inflate(R.layout.fragment_chuc_nang3, container, false);
+        //4. tim dieu khien recy
+        recyclerViewLandScape = viewCN3.findViewById(R.id.ryCau3);
+
+        list = new ArrayList<LandScape>();
+        list.add(new LandScape("Thap Paris", "thap1"));
+        list.add(new LandScape("Thap Cao", "thap2"));
+        list.add(new LandScape("Thap DuBai", "thap3"));
+        list.add(new LandScape("Thap Nghien", "thap4"));
+
+        //5. tao layout manager de cai dat bo cuc cho recy
+        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(viewCN3.getContext());
+        recyclerViewLandScape.setLayoutManager(layoutLinear);
+
+        //6. tao adapter gan vao du lieu
+        adapter = new LandScapeAdapter(viewCN3.getContext(),list);
+        //7. gan adapter vao recy
+        recyclerViewLandScape.setAdapter(adapter);
+
+
+
+        return viewCN3;
     }
 }

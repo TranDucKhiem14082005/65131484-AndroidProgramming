@@ -53,7 +53,7 @@ public class ChucNang2Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_chuc_nang2, container, false);
+        View viewCN2 = inflater.inflate(R.layout.fragment_chuc_nang2, container, false);
         dsTenBHCMVN = new ArrayList<>();
         dsTenBHCMVN.add("Đất nước trọn niềm vui");
         dsTenBHCMVN.add("Trần Đức Khiêm");
@@ -67,7 +67,7 @@ public class ChucNang2Fragment extends Fragment {
         dsTenBHCMVN.add("Tàu anh qua núi ");
 
         // 2. Ánh xạ ListView
-        ListView lvTenTinhThanh = view.findViewById(R.id.LV_DSBH);
+        ListView lvTenTinhThanh = viewCN2.findViewById(R.id.LV_DSBH);
 
         // 3. Adapter
         ArrayAdapter<String> adapterTinhThanh = new ArrayAdapter<>(
@@ -80,6 +80,6 @@ public class ChucNang2Fragment extends Fragment {
 
         // 4. Click item
         lvTenTinhThanh.setOnItemClickListener(BoLangNgheVaXl);
-        return view;
+        return viewCN2;
     }
 }
