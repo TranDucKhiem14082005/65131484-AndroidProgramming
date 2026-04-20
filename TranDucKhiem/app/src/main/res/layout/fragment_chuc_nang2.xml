@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChucNang2Fragment">
 
+
     <TextView
-        android:id="@+id/ChucNang2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CN2" />
-</FrameLayout>
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="80dp"
+        android:background="#D92416"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="DS CÁC BÀI HÁT CÁCH MẠNG VIỆT NAM"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/LV_DSBH"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
