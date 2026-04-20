@@ -44,7 +44,7 @@ public class ChucNang3Fragment extends Fragment {
                              Bundle savedInstanceState) {
         View viewCN3 = inflater.inflate(R.layout.fragment_chuc_nang3, container, false);
         //4. tim dieu khien recy
-        recyclerViewLandScape = viewCN3.findViewById(R.id.ryCau3);
+        recyclerViewLandScape = viewCN3.findViewById(R.id.recycCN3);
 
         list = new ArrayList<LandScape>();
         list.add(new LandScape("Thap Paris", "thap1"));
