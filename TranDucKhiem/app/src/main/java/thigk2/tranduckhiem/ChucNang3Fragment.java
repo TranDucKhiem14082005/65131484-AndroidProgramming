@@ -47,11 +47,11 @@ public class ChucNang3Fragment extends Fragment {
         recyclerViewLandScape = viewCN3.findViewById(R.id.recycCN3);
 
         list = new ArrayList<LandScape>();
-        list.add(new LandScape("Hồ Chí Minh", "thap1","Quê ở làng Sen (Kim Liên), xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An."));
-        list.add(new LandScape("Nguyễn Trãi", "thap2","Quê gốc ở làng Chi Ngại, huyện Phượng Sơn, lộ Lạng Giang (nay thuộc Chí Linh, Hải Dương), sinh ra tại Thăng Long."));
-        list.add(new LandScape("Nguyễn Du", "thap3","Quê ở làng Tiên Điền, huyện Nghi Xuân, tỉnh Hà Tĩnh."));
-        list.add(new LandScape("Chu Văn An", "thap4","Quê ở thôn Quang Liệt, xã Quang Liệt, huyện Thanh Đàm (nay là xã Thanh Liệt, huyện Thanh Trì, Hà Nội)."));
-        list.add(new LandScape("Nguyễn Đình Chiểu", "thap4",": Quê gốc ở làng Phong Điền, huyện Phong Điền, tỉnh Thừa Thiên Huế (sinh ra tại Gia Định - nay là TP. Hồ Chí Minh)"));
+        list.add(new LandScape("Hồ Chí Minh", "img","Quê ở làng Sen (Kim Liên), xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An."));
+        list.add(new LandScape("Nguyễn Trãi", "img_1","Quê gốc ở làng Chi Ngại, huyện Phượng Sơn, lộ Lạng Giang (nay thuộc Chí Linh, Hải Dương), sinh ra tại Thăng Long."));
+        list.add(new LandScape("Nguyễn Du", "img_2","Quê ở làng Tiên Điền, huyện Nghi Xuân, tỉnh Hà Tĩnh."));
+        list.add(new LandScape("Chu Văn An", "img_3","Quê ở thôn Quang Liệt, xã Quang Liệt, huyện Thanh Đàm (nay là xã Thanh Liệt, huyện Thanh Trì, Hà Nội)."));
+        list.add(new LandScape("Nguyễn Đình Chiểu", "img_4,", "Quê gốc ở làng Phong Điền, huyện Phong Điền, tỉnh Thừa Thiên Huế (sinh ra tại Gia Định - nay là TP. Hồ Chí Minh)"));
 
         //5. tao layout manager de cai dat bo cuc cho recy
         RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(viewCN3.getContext());
