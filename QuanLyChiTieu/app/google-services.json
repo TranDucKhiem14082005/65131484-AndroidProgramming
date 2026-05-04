@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364266387602",
+    "project_id": "example-android-39ac6",
+    "storage_bucket": "example-android-39ac6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364266387602:android:e1c7089e1c146d66e9ce4b",
+        "android_client_info": {
+          "package_name": "khiem.it.quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCipvbx6-IsiS2ESvmhX_9QxdnDprcLH3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
